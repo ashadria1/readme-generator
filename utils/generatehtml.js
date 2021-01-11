@@ -1,8 +1,17 @@
-const generatehtml = ({
-    name,
+function generatehtml({
+    userName,
     projectTitle,
-    projectDescription
-  }) => {
+    projectDescription,
+    installationInstructions,
+    projectUsage,
+    projectLicense,
+    projectContributors,
+    projectTests,
+    projectIssues,
+    githubUserName,
+    userEmail,
+    
+}) {
     const htmlStringToWriteToFile = `
     <!DOCTYPE html>
     
@@ -20,7 +29,7 @@ const generatehtml = ({
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1>Name:  ${name}</h1>
+                    <h1>Name:  ${userName}</h1>
                     <h5>Project Title:  ${projectTitle}</h5>
                     <p>Project Description:  ${projectDescription}</p>
                     <p></p>
@@ -32,9 +41,9 @@ const generatehtml = ({
     </body>
     
     </html>`;
-  
+
     return htmlStringToWriteToFile;
-  };
+}
   
   module.exports = generatehtml;
   
