@@ -1,4 +1,4 @@
-
+/* 
 function generateREADME({
     userName,
     projectTitle,
@@ -12,15 +12,16 @@ function generateREADME({
     githubUserName,
     userEmail,
     
-}) {
-    const READMEStringToWriteToFile =function generateReadme(userReponses) {
-    return `
+}) */
 
-  <h1 align="center">${userReponses.projectTitle} 👋</h1>
+function generateReadme(userResponses) {
+  return `
+
+  <h1 align="center">${userResponses.projectTitle} 👋</h1>
   
-  ![badge](https://img.shields.io/badge/license-${userReponses.license}-brightgreen)<br />
+  ![badge](https://img.shields.io/badge/license-${userResponses.license}-brightgreen)<br />
   ## Description
-  🔍 ${userReponses.description}
+  🔍 ${userResponses.description}
   ## Table of Contents
   - [Description](#projectDescription)
   - [Installation](#projectInstallation)
@@ -30,24 +31,25 @@ function generateREADME({
   - [Tests](#projectTests)
   - [Questions](#projectIssues)
   ## Installation
-  💾 ${userReponses.projectInstallation}
+  💾 ${userResponses.projectInstallation}
   ## Usage
-  💻 ${userReponses.projectUsage}
+  💻 ${userResponses.projectUsage}
   ## License
-  ![badge](https://img.shields.io/badge/license-${userReponses.license}-brightgreen)
+  ![badge](https://img.shields.io/badge/license-${userResponses.license}-brightgreen)
   <br />
-  This application is covered by the ${userReponses.projectLicense} license. 
+  This application is covered by the ${userResponses.projectLicense} license. 
   ## Contributing
-  👪 ${userReponses.projectContributors}
+  👪 ${userResponses.projectContributors}
   ## Tests
-  ✏️ ${userReponses.projectTests}
+  ✏️ ${userResponses.projectTests}
   ## Questions
-  ✋ ${userReponses.projectIssues}<br />
+  ✋ ${userResponses.projectIssues}<br />
   <br />
-  :octocat: Find me on GitHub: [${userReponses.userName}](https://github.com/${userReponses.username})<br />
+  :octocat: Find me on GitHub: [${userResponses.userName}](https://github.com/${userResponses.username})<br />
   <br />
-  ✉️ Email me with any questions: ${userReponses.userEmail}<br /><br />
+  ✉️ Email me with any questions: ${userResponses.userEmail}<br /><br />
   _This README was generated with ❤️ by [README-generator](https://github.com/ashadria1/README-generator) 🔥🔥🔥_
     `;
-  }
-  
+}
+
+module.exports=generateReadme;

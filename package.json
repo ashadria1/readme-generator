@@ -19,5 +19,6 @@
   "homepage": "https://github.com/ashadria1/readme-generator#readme",
   "dependencies": {
     "inquirer": "^7.3.3"
-  }
+  },
+  "devDependencies": {}
 }
