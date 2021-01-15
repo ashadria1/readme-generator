@@ -21,7 +21,7 @@ const arrayOfQuestions = [
   {
     type: "input",
     message: "What are the installation instructions?",
-    name: "installationInstructions",
+    name: "projectInstallation",
   },
   {
     type: "input",

@@ -1,27 +1,12 @@
-/* 
-function generateREADME({
-    userName,
-    projectTitle,
-    projectDescription,
-    installationInstructions,
-    projectUsage,
-    projectLicense,
-    projectContributors,
-    projectTests,
-    projectIssues,
-    githubUserName,
-    userEmail,
-    
-}) */
 
 function generateReadme(userResponses) {
   return `
 
   <h1 align="center">${userResponses.projectTitle} 👋</h1>
   
-  ![badge](https://img.shields.io/badge/license-${userResponses.license}-brightgreen)<br />
+  ![badge](https://img.shields.io/badge/license-${userResponses.projectLicense}-brightgreen)<br />
   ## Description
-  🔍 ${userResponses.description}
+  🔍 ${userResponses.projectDescription}
   ## Table of Contents
   - [Description](#projectDescription)
   - [Installation](#projectInstallation)
@@ -35,7 +20,7 @@ function generateReadme(userResponses) {
   ## Usage
   💻 ${userResponses.projectUsage}
   ## License
-  ![badge](https://img.shields.io/badge/license-${userResponses.license}-brightgreen)
+  ![badge](https://img.shields.io/badge/license-${userResponses.projectLicense}-brightgreen)
   <br />
   This application is covered by the ${userResponses.projectLicense} license. 
   ## Contributing
