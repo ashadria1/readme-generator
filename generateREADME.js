@@ -30,10 +30,9 @@ function generateReadme(userResponses) {
   ## Questions
   ✋ ${userResponses.projectIssues}<br />
   <br />
-  :octocat: Find me on GitHub: [${userResponses.userName}](https://github.com/${userResponses.username})<br />
+  Find me on GitHub: [${userResponses.userName}](https://github.com/${userResponses.githubUserName})<br />
   <br />
   ✉️ Email me with any questions: ${userResponses.userEmail}<br /><br />
-  _This README was generated with ❤️ by [README-generator](https://github.com/ashadria1/README-generator) 🔥🔥🔥_
     `;
 }
 
